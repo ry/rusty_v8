@@ -5,6 +5,8 @@ v8_static_library("rusty_v8") {
   sources = [
     "src/inspector/channel.cc",
     "src/inspector/client.cc",
+    "src/isolate.cc",
+    "src/locker.cc",
     "src/platform/task.cc",
     "src/string_buffer.cc",
   ]
