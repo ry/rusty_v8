@@ -11,6 +11,8 @@ buildconfig = "//build/config/BUILDCONFIG.gn"
 # "gn check" or "gn gen --check".
 check_targets = []
 
+secondary_source = "//v8"
+
 default_args = {
   # Various global chrome args that are unrelated to deno.
   proprietary_codecs = false
@@ -22,6 +24,10 @@ default_args = {
   use_glib = false
   use_ozone = false
   use_udev = false
+
+  # Do not use build/
+  use_custom_libcxx = false
+  use_sysroot = false
 
   # To disable "use_atk" and other features that we don't need.
   is_desktop_linux = false

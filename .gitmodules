@@ -1,3 +1,15 @@
-[submodule "depot_tools"]
-	path = third_party/depot_tools
-	url = https://chromium.googlesource.com/chromium/tools/depot_tools.git
+[submodule "buildtools"]
+	path = buildtools
+	url = https://chromium.googlesource.com/chromium/src/buildtools
+[submodule "v8"]
+	path = v8
+	url = https://chromium.googlesource.com/v8/v8
+[submodule "third_party/googletest"]
+	path = third_party/googletest/src
+	url = https://github.com/google/googletest.git
+[submodule "common"]
+	path = base/trace_event/common
+	url = https://chromium.googlesource.com/chromium/src/base/trace_event/common.git
+[submodule "build"]
+	path = build
+	url = https://github.com/denoland/chromium_build.git
